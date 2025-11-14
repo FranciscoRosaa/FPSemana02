@@ -1,11 +1,11 @@
 statement1 = input()
 statement2 = input()
 
-def limpar(frase):
+def clean(frase):
         return frase.replace("?", "").replace("!", "").replace(",", "").replace(".", "").split()
 
-set1 = set(limpar(statement1))
-set2 = set(limpar(statement2))
+set1 = set(clean(statement1))
+set2 = set(clean(statement2))
 
 intersecao = sorted(set1 & set2)
 
